@@ -1,8 +1,7 @@
+import CollectionHeader from "@/components/CollectionHeader";
+import MMCollectionHeroSection from "@/components/MMCollectionHeroSection";
+import MMCollectionPurchaseSection from "@/components/MMCollectionPurchaseSection";
 import styles from "@/styles/Home.module.css";
-
-import CollectionHeader from "../components/collectionHeader.js";
-import MMCollectionHeroSection from "../components/mmCollectionHeroSection.js";
-import MMCollectionPurchaseSection from "../components/mmCollectionPurchaseSection.js";
 
 export default function MMCollection() {
   return (

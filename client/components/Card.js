@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useContract, useProvider, useSigner } from "wagmi";
 import { Card, Illustration } from "@web3uikit/core";
 import styles from "../styles/Home.module.css";
-import { abi, NFTMarketplace_CONTRACT_ADDRESS } from "../contracts/index.js";
+import NFTAbi from "../contractsData/NFTMarketplace.json";
+import NFTAddress from "../contractsData/NFTMarketplace-address.json";
 
 export default function CardComp(props) {
   const provider = useProvider();
@@ -18,8 +19,8 @@ export default function CardComp(props) {
   });
 
   const NftMarketplace = useContract({
-    address: NFTMarketplace_CONTRACT_ADDRESS,
-    abi: abi,
+    address: NFTAddress.address,
+    abi: NFTAbi.abi,
     signerOrProvider: signer || provider,
   });
 

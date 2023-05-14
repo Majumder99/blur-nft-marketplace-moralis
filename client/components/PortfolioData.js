@@ -1,6 +1,6 @@
 import styles from "@/styles/Home.module.css";
 
-import GetNfts from "./getNfts.js";
+import GetNfts from "./GetNFTs.js";
 
 export default function PortfolioData() {
   return (

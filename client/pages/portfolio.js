@@ -1,8 +1,7 @@
+import CollectionHeader from "@/components/CollectionHeader";
+import PortfolioData from "@/components/PortfolioData";
+import PortfolioTitle from "@/components/PortfolioTitle";
 import styles from "@/styles/Home.module.css";
-
-import CollectionHeader from "../components/collectionHeader.js";
-import PortfolioTitle from "../components/portfolioTitle.js";
-import PortfolioData from "../components/portfolioData.js";
 
 export default function Portfolio() {
   return (

@@ -1,10 +1,9 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-
-import Header from "../components/header.js";
-import HeroSection from "../components/heroSection.js";
-import AirdropPopUp from "../components/airdropPopUp.js";
-import TrendingSection from "../components/trendingSection.js";
+import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
+import AirdropPopUp from "@/components/AirDropPopUp";
+import TrendingSection from "@/components/TrendingSection";
 
 export default function Home() {
   return (

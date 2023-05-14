@@ -1,8 +1,7 @@
+import CollectionHeader from "@/components/CollectionHeader";
+import CollectionHeroSection from "@/components/CollectionHeroSection";
+import CollectionPurchaseSection from "@/components/CollectionPurchaseSection";
 import styles from "@/styles/Home.module.css";
-
-import CollectionHeader from "../components/collectionHeader.js";
-import CollectionHeroSection from "../components/collectionHeroSection.js";
-import CollectionPurchaseSection from "../components/collectionPurchaseSection.js";
 
 export default function ViewCollection() {
   return (

@@ -5,6 +5,7 @@ async function main() {
   const nftMarketplace = await NFTMarketplace.deploy();
   await nftMarketplace.deployed();
   console.log("NFTMarketplace deployed to:", nftMarketplace.address);
+  saveFrontendFiles(nftMarketplace, "NFTMarketplace");
 }
 
 function saveFrontendFiles(contract, name) {

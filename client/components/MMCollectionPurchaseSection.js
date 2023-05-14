@@ -12,8 +12,8 @@ import {
 } from "wagmi";
 import { Eth } from "@web3uikit/icons";
 import styles from "@/styles/Home.module.css";
-
-import { abi, NFTMarketplace_CONTRACT_ADDRESS } from "../contracts/index.js";
+import NFTAddress from "../contractsData/NFTMarketplace-address.json";
+import NFTAbi from "../contractsData/NFTMarketplace.json";
 
 export default function MMCollectionPurchaseSection() {
   const { address } = useAccount();
@@ -26,14 +26,14 @@ export default function MMCollectionPurchaseSection() {
   const [market, setMarket] = useState([]);
 
   const NftMarketplace = useContract({
-    address: NFTMarketplace_CONTRACT_ADDRESS,
-    abi: abi,
+    address: NFTAddress.address,
+    abi: NFTAbi.abi,
     signerOrProvider: signer || provider,
   });
 
   const { config } = usePrepareContractWrite({
-    address: NFTMarketplace_CONTRACT_ADDRESS,
-    abi: abi,
+    address: NFTAddress.address,
+    abi: NFTAbi.abi,
     overrides: {
       from: address,
       value: price,
